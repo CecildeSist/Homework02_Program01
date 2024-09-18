@@ -144,5 +144,71 @@ public class MainActivity extends AppCompatActivity {
         int redProgress = sb_j_redBar.getProgress();
         int greenProgress = sb_j_greenBar.getProgress();
         int blueProgress = sb_j_blueBar.getProgress();
+        //Determine first char of red section of hex code
+        String redProgHex;
+        if (redProgress / 16 == 15) {
+            redProgHex = "F";
+            redProgress = redProgress - 240;
+        }
+        else if (redProgress / 16 == 14) {
+            redProgHex = "E";
+            redProgress = redProgress - 224;
+        }
+        else if (redProgress / 16 == 13) {
+            redProgHex = "D";
+            redProgress = redProgress - 208;
+        }
+        else if (redProgress / 16 == 12) {
+            redProgHex = "C";
+            redProgress = redProgress - 192;
+        }
+        else if (redProgress / 16 == 11) {
+            redProgHex = "B";
+            redProgress = redProgress - 176;
+        }
+        else if (redProgress / 16 == 10) {
+            redProgHex = "A";
+            redProgress = redProgress - 160;
+        }
+        else if (redProgress / 16 == 9) {
+            redProgHex = "9";
+            redProgress = redProgress - 144;
+        }
+        else if (redProgress / 16 == 8) {
+            redProgHex = "8";
+            redProgress = redProgress - 128;
+        }
+        else if (redProgress / 16 == 7) {
+            redProgHex = "7";
+            redProgress = redProgress - 112;
+        }
+        else if (redProgress / 16 == 6) {
+            redProgHex = "6";
+            redProgress = redProgress - 96;
+        }
+        else if (redProgress / 16 == 5) {
+            redProgHex = "5";
+            redProgress = redProgress - 80;
+        }
+        else if (redProgress / 16 == 4) {
+            redProgHex = "4";
+            redProgress = redProgress - 64;
+        }
+        else if (redProgress / 16 == 3) {
+            redProgHex = "3";
+            redProgress = redProgress - 48;
+        }
+        else if (redProgress / 16 == 2) {
+            redProgHex = "2";
+            redProgress = redProgress - 32;
+        }
+        else if (redProgress / 16 == 1) {
+            redProgHex = "1";
+            redProgress = redProgress - 16;
+        }
+        else {
+            redProgHex = "0";
+        }
+        //Determine second char of red hex portion
     }
 }
