@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
     ListView lv_j_colorList;
 
+    ConstraintLayout mainBackground;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
         btn_j_saveColor = findViewById(R.id.btn_main_saveColor);
 
         lv_j_colorList = findViewById(R.id.lv_main_colorList);
+
+        mainBackground = findViewById(R.id.main);
 
         //onSeekBarChangeListeners to update seek bars in real time
         redBarListener();
