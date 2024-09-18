@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
         redBarListener();
         greenBarListener();
         blueBarListener();
+
+        //Next step: convert progress to hexadecimal code
     }
 
     private void redBarListener() {
@@ -135,5 +137,12 @@ public class MainActivity extends AppCompatActivity {
             public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
+    }
+
+    private void changeHex() {
+        //Retrieve progress from each bar.
+        int redProgress = sb_j_redBar.getProgress();
+        int greenProgress = sb_j_greenBar.getProgress();
+        int blueProgress = sb_j_blueBar.getProgress();
     }
 }
