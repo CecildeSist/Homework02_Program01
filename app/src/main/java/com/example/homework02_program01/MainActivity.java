@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         greenBarListener();
         blueBarListener();
 
-        //Next step: convert progress to hexadecimal code
+        //Note to self: don't forget about the listView!
     }
 
     private void redBarListener() {
@@ -497,5 +497,9 @@ public class MainActivity extends AppCompatActivity {
         //Changes the background color
         mainBackground.setBackgroundColor(Color.rgb(redProgress, greenProgress, blueProgress));
         //Change the color of all the text boxes depending on brightness of any of the RGB values
+        //Change the color to white if redProgress is less than 127
+        if (redProgress < 127) {
+
+        }
     }
 }
