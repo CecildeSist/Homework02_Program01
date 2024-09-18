@@ -497,9 +497,47 @@ public class MainActivity extends AppCompatActivity {
         //Changes the background color
         mainBackground.setBackgroundColor(Color.rgb(redProgress, greenProgress, blueProgress));
         //Change the color of all the text boxes depending on brightness of any of the RGB values
-        //Change the color to white if redProgress is less than 127
-        if (redProgress < 127) {
-
+        //Change the color to white if any of the progress values are less than 86
+        if (redProgress < 86) {
+            et_j_redWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_redNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_greenWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_greenNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_blueWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_blueNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_hexWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_hexValue.setTextColor(Color.rgb(255, 255, 255));
+        }
+        else if (greenProgress < 86) {
+            et_j_redWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_redNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_greenWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_greenNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_blueWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_blueNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_hexWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_hexValue.setTextColor(Color.rgb(255, 255, 255));
+        }
+        else if (blueProgress < 86) {
+            et_j_redWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_redNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_greenWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_greenNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_blueWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_blueNum.setTextColor(Color.rgb(255, 255, 255));
+            et_j_hexWord.setTextColor(Color.rgb(255, 255, 255));
+            et_j_hexValue.setTextColor(Color.rgb(255, 255, 255));
+        }
+        //Make all the text black if all of the progress values are less than 86.
+        else {
+            et_j_redWord.setTextColor(Color.rgb(0, 0, 0));
+            et_j_redNum.setTextColor(Color.rgb(0, 0, 0));
+            et_j_greenWord.setTextColor(Color.rgb(0, 0, 0));
+            et_j_greenNum.setTextColor(Color.rgb(0, 0, 0));
+            et_j_blueWord.setTextColor(Color.rgb(0, 0, 0));
+            et_j_blueNum.setTextColor(Color.rgb(0, 0, 0));
+            et_j_hexWord.setTextColor(Color.rgb(0, 0, 0));
+            et_j_hexValue.setTextColor(Color.rgb(0, 0, 0));
         }
     }
 }
