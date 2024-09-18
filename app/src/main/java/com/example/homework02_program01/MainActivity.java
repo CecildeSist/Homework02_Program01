@@ -327,49 +327,49 @@ public class MainActivity extends AppCompatActivity {
             greenProgHex = "0";
         }
         //Determine second char of green hex portion
-        if (greenProgress / 16 == 15) {
+        if (greenProgress - 15 == 0) {
             greenProgHex = greenProgHex + "F";
         }
-        else if (greenProgress / 16 == 14) {
+        else if (greenProgress - 14 == 0) {
             greenProgHex = greenProgHex + "E";
         }
-        else if (greenProgress / 16 == 13) {
+        else if (greenProgress - 13 == 0) {
             greenProgHex = greenProgHex + "D";
         }
-        else if (greenProgress / 16 == 12) {
+        else if (greenProgress - 12 == 0) {
             greenProgHex = greenProgHex + "C";
         }
-        else if (greenProgress / 16 == 11) {
+        else if (greenProgress - 11 == 0) {
             greenProgHex = greenProgHex + "B";
         }
-        else if (greenProgress / 16 == 10) {
+        else if (greenProgress - 10 == 0) {
             greenProgHex = greenProgHex + "A";
         }
-        else if (greenProgress / 16 == 9) {
+        else if (greenProgress - 9 == 0) {
             greenProgHex = greenProgHex + "9";
         }
-        else if (greenProgress / 16 == 8) {
+        else if (greenProgress - 8 == 0) {
             greenProgHex = greenProgHex + "8";
         }
-        else if (greenProgress / 16 == 7) {
+        else if (greenProgress - 7 == 0) {
             greenProgHex = greenProgHex + "7";
         }
-        else if (greenProgress / 16 == 6) {
+        else if (greenProgress - 6 == 0) {
             greenProgHex = greenProgHex + "6";
         }
-        else if (greenProgress / 16 == 5) {
+        else if (greenProgress - 5 == 0) {
             greenProgHex = greenProgHex + "5";
         }
-        else if (greenProgress / 16 == 4) {
+        else if (greenProgress - 4 == 0) {
             greenProgHex = greenProgHex + "4";
         }
-        else if (greenProgress / 16 == 3) {
+        else if (greenProgress - 3 == 0) {
             greenProgHex = greenProgHex + "3";
         }
-        else if (greenProgress / 16 == 2) {
+        else if (greenProgress - 2 == 0) {
             greenProgHex = greenProgHex + "2";
         }
-        else if (greenProgress / 16 == 1) {
+        else if (greenProgress - 1 == 0) {
             greenProgHex = greenProgHex + "1";
         }
         else {
@@ -441,49 +441,49 @@ public class MainActivity extends AppCompatActivity {
             blueProgHex = "0";
         }
         //Determine second char of blue hex portion
-        if (blueProgress / 16 == 15) {
+        if (blueProgress == 15) {
             blueProgHex = blueProgHex + "F";
         }
-        else if (blueProgress / 16 == 14) {
+        else if (blueProgress == 14) {
             blueProgHex = blueProgHex + "E";
         }
-        else if (blueProgress / 16 == 13) {
+        else if (blueProgress == 13) {
             blueProgHex = blueProgHex + "D";
         }
-        else if (blueProgress / 16 == 12) {
+        else if (blueProgress == 12) {
             blueProgHex = blueProgHex + "C";
         }
-        else if (blueProgress / 16 == 11) {
+        else if (blueProgress == 11) {
             blueProgHex = blueProgHex + "B";
         }
-        else if (blueProgress / 16 == 10) {
+        else if (blueProgress == 10) {
             blueProgHex = blueProgHex + "A";
         }
-        else if (blueProgress / 16 == 9) {
+        else if (blueProgress == 9) {
             blueProgHex = blueProgHex + "9";
         }
-        else if (blueProgress / 16 == 8) {
+        else if (blueProgress == 8) {
             blueProgHex = blueProgHex + "8";
         }
-        else if (blueProgress / 16 == 7) {
+        else if (blueProgress == 7) {
             blueProgHex = blueProgHex + "7";
         }
-        else if (blueProgress / 16 == 6) {
+        else if (blueProgress == 6) {
             blueProgHex = blueProgHex + "6";
         }
-        else if (blueProgress / 16 == 5) {
+        else if (blueProgress == 5) {
             blueProgHex = blueProgHex + "5";
         }
-        else if (blueProgress / 16 == 4) {
+        else if (blueProgress == 4) {
             blueProgHex = blueProgHex + "4";
         }
-        else if (blueProgress / 16 == 3) {
+        else if (blueProgress == 3) {
             blueProgHex = blueProgHex + "3";
         }
-        else if (blueProgress / 16 == 2) {
+        else if (blueProgress == 2) {
             blueProgHex = blueProgHex + "2";
         }
-        else if (blueProgress / 16 == 1) {
+        else if (blueProgress == 1) {
             blueProgHex = blueProgHex + "1";
         }
         else {
