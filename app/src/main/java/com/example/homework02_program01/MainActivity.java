@@ -91,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 int redProgress = sb_j_redBar.getProgress();
                 et_j_redNum.setText(String.valueOf(redProgress));
+                changeHex();
             }
 
             @Override
@@ -109,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 int greenProgress = sb_j_greenBar.getProgress();
                 et_j_greenNum.setText(String.valueOf(greenProgress));
+                changeHex();
             }
 
             @Override
@@ -127,6 +129,7 @@ public class MainActivity extends AppCompatActivity {
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 int blueProgress = sb_j_blueBar.getProgress();
                 et_j_blueNum.setText(String.valueOf(blueProgress));
+                changeHex();
             }
 
             @Override
@@ -210,5 +213,53 @@ public class MainActivity extends AppCompatActivity {
             redProgHex = "0";
         }
         //Determine second char of red hex portion
+        if (redProgress / 16 == 15) {
+            redProgHex = redProgHex + "F";
+        }
+        else if (redProgress / 16 == 14) {
+            redProgHex = redProgHex + "E";
+        }
+        else if (redProgress / 16 == 13) {
+            redProgHex = redProgHex + "D";
+        }
+        else if (redProgress / 16 == 12) {
+            redProgHex = redProgHex + "C";
+        }
+        else if (redProgress / 16 == 11) {
+            redProgHex = redProgHex + "B";
+        }
+        else if (redProgress / 16 == 10) {
+            redProgHex = redProgHex + "A";
+        }
+        else if (redProgress / 16 == 9) {
+            redProgHex = redProgHex + "9";
+        }
+        else if (redProgress / 16 == 8) {
+            redProgHex = redProgHex + "8";
+        }
+        else if (redProgress / 16 == 7) {
+            redProgHex = redProgHex + "7";
+        }
+        else if (redProgress / 16 == 6) {
+            redProgHex = redProgHex + "6";
+        }
+        else if (redProgress / 16 == 5) {
+            redProgHex = redProgHex + "5";
+        }
+        else if (redProgress / 16 == 4) {
+            redProgHex = redProgHex + "4";
+        }
+        else if (redProgress / 16 == 3) {
+            redProgHex = redProgHex + "3";
+        }
+        else if (redProgress / 16 == 2) {
+            redProgHex = redProgHex + "2";
+        }
+        else if (redProgress / 16 == 1) {
+            redProgHex = redProgHex + "1";
+        }
+        else {
+            redProgHex = redProgHex + "0";
+        }
     }
 }
