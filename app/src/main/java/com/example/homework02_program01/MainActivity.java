@@ -70,32 +70,64 @@ public class MainActivity extends AppCompatActivity {
 
         lv_j_colorList = findViewById(R.id.lv_main_colorList);
 
-        int redProgress;
-        int greenProgress;
         int blueProgress;
 
-        //onSeekBarChangeListener to update et_j_redNum in real time
+        //onSeekBarChangeListeners to update seek bars in real time
         redBarListener();
+        greenBarListener();
+        blueBarListener();
     }
 
     private void redBarListener() {
         sb_j_redBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                //int redProgress = sb_j_redBar.getProgress();
-                //et_j_redNum.setText(redProgress);
+                int redProgress = sb_j_redBar.getProgress();
+                et_j_redNum.setText(String.valueOf(redProgress));
             }
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
-                redProgress = sb_j_redBar.getProgress();
-                et_j_redNum.setText(redProgress);
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
-                int redProgress = sb_j_redBar.getProgress();
-                et_j_redNum.setText(redProgress);
+            }
+        });
+    }
+
+    private void greenBarListener() {
+        sb_j_greenBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                int greenProgress = sb_j_greenBar.getProgress();
+                et_j_greenNum.setText(String.valueOf(greenProgress));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+        });
+    }
+
+    private void blueBarListener() {
+        sb_j_blueBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                int blueProgress = sb_j_blueBar.getProgress();
+                et_j_blueNum.setText(String.valueOf(blueProgress));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
             }
         });
     }
