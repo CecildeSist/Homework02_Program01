@@ -261,5 +261,119 @@ public class MainActivity extends AppCompatActivity {
         else {
             redProgHex = redProgHex + "0";
         }
+        //Repeat process for green bar
+        String greenProgHex;
+        if (greenProgress / 16 == 15) {
+            greenProgHex = "F";
+            greenProgress = greenProgress - 240;
+        }
+        else if (greenProgress / 16 == 14) {
+            greenProgHex = "E";
+            greenProgress = greenProgress - 224;
+        }
+        else if (greenProgress / 16 == 13) {
+            greenProgHex = "D";
+            greenProgress = greenProgress - 208;
+        }
+        else if (greenProgress / 16 == 12) {
+            greenProgHex = "C";
+            greenProgress = greenProgress - 192;
+        }
+        else if (greenProgress / 16 == 11) {
+            greenProgHex = "B";
+            greenProgress = greenProgress - 176;
+        }
+        else if (greenProgress / 16 == 10) {
+            greenProgHex = "A";
+            greenProgress = greenProgress - 160;
+        }
+        else if (greenProgress / 16 == 9) {
+            greenProgHex = "9";
+            greenProgress = greenProgress - 144;
+        }
+        else if (greenProgress / 16 == 8) {
+            greenProgHex = "8";
+            greenProgress = greenProgress - 128;
+        }
+        else if (greenProgress / 16 == 7) {
+            greenProgHex = "7";
+            greenProgress = greenProgress - 112;
+        }
+        else if (greenProgress / 16 == 6) {
+            greenProgHex = "6";
+            greenProgress = greenProgress - 96;
+        }
+        else if (greenProgress / 16 == 5) {
+            greenProgHex = "5";
+            greenProgress = greenProgress - 80;
+        }
+        else if (greenProgress / 16 == 4) {
+            greenProgHex = "4";
+            greenProgress = greenProgress - 64;
+        }
+        else if (greenProgress / 16 == 3) {
+            greenProgHex = "3";
+            greenProgress = greenProgress - 48;
+        }
+        else if (greenProgress / 16 == 2) {
+            greenProgHex = "2";
+            greenProgress = greenProgress - 32;
+        }
+        else if (greenProgress / 16 == 1) {
+            greenProgHex = "1";
+            greenProgress = greenProgress - 16;
+        }
+        else {
+            greenProgHex = "0";
+        }
+        //Determine second char of green hex portion
+        if (greenProgress / 16 == 15) {
+            greenProgHex = greenProgHex + "F";
+        }
+        else if (greenProgress / 16 == 14) {
+            greenProgHex = greenProgHex + "E";
+        }
+        else if (greenProgress / 16 == 13) {
+            greenProgHex = greenProgHex + "D";
+        }
+        else if (greenProgress / 16 == 12) {
+            greenProgHex = greenProgHex + "C";
+        }
+        else if (greenProgress / 16 == 11) {
+            greenProgHex = greenProgHex + "B";
+        }
+        else if (greenProgress / 16 == 10) {
+            greenProgHex = greenProgHex + "A";
+        }
+        else if (greenProgress / 16 == 9) {
+            greenProgHex = greenProgHex + "9";
+        }
+        else if (greenProgress / 16 == 8) {
+            greenProgHex = greenProgHex + "8";
+        }
+        else if (greenProgress / 16 == 7) {
+            greenProgHex = greenProgHex + "7";
+        }
+        else if (greenProgress / 16 == 6) {
+            greenProgHex = greenProgHex + "6";
+        }
+        else if (greenProgress / 16 == 5) {
+            greenProgHex = greenProgHex + "5";
+        }
+        else if (greenProgress / 16 == 4) {
+            greenProgHex = greenProgHex + "4";
+        }
+        else if (greenProgress / 16 == 3) {
+            greenProgHex = greenProgHex + "3";
+        }
+        else if (greenProgress / 16 == 2) {
+            greenProgHex = greenProgHex + "2";
+        }
+        else if (greenProgress / 16 == 1) {
+            greenProgHex = greenProgHex + "1";
+        }
+        else {
+            greenProgHex = greenProgHex + "0";
+        }
     }
 }
