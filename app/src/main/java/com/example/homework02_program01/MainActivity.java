@@ -70,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
 
         lv_j_colorList = findViewById(R.id.lv_main_colorList);
 
-        int blueProgress;
-
         //onSeekBarChangeListeners to update seek bars in real time
         redBarListener();
         greenBarListener();
