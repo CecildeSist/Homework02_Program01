@@ -213,49 +213,49 @@ public class MainActivity extends AppCompatActivity {
             redProgHex = "0";
         }
         //Determine second char of red hex portion
-        if (redProgress / 16 == 15) {
+        if (redProgress - 15 == 0) {
             redProgHex = redProgHex + "F";
         }
-        else if (redProgress / 16 == 14) {
+        else if (redProgress - 14 == 0) {
             redProgHex = redProgHex + "E";
         }
-        else if (redProgress / 16 == 13) {
+        else if (redProgress - 13 == 0) {
             redProgHex = redProgHex + "D";
         }
-        else if (redProgress / 16 == 12) {
+        else if (redProgress - 12 == 0) {
             redProgHex = redProgHex + "C";
         }
-        else if (redProgress / 16 == 11) {
+        else if (redProgress - 11 == 0) {
             redProgHex = redProgHex + "B";
         }
-        else if (redProgress / 16 == 10) {
+        else if (redProgress - 10 == 0) {
             redProgHex = redProgHex + "A";
         }
-        else if (redProgress / 16 == 9) {
+        else if (redProgress - 9 == 0) {
             redProgHex = redProgHex + "9";
         }
-        else if (redProgress / 16 == 8) {
+        else if (redProgress - 8 == 0) {
             redProgHex = redProgHex + "8";
         }
-        else if (redProgress / 16 == 7) {
+        else if (redProgress - 7 == 0) {
             redProgHex = redProgHex + "7";
         }
-        else if (redProgress / 16 == 6) {
+        else if (redProgress - 6 == 0) {
             redProgHex = redProgHex + "6";
         }
-        else if (redProgress / 16 == 5) {
+        else if (redProgress - 5 == 0) {
             redProgHex = redProgHex + "5";
         }
-        else if (redProgress / 16 == 4) {
+        else if (redProgress - 4 == 0) {
             redProgHex = redProgHex + "4";
         }
-        else if (redProgress / 16 == 3) {
+        else if (redProgress - 3 == 0) {
             redProgHex = redProgHex + "3";
         }
-        else if (redProgress / 16 == 2) {
+        else if (redProgress - 2 == 0) {
             redProgHex = redProgHex + "2";
         }
-        else if (redProgress / 16 == 1) {
+        else if (redProgress - 1 == 0) {
             redProgHex = redProgHex + "1";
         }
         else {
@@ -375,5 +375,121 @@ public class MainActivity extends AppCompatActivity {
         else {
             greenProgHex = greenProgHex + "0";
         }
+        //Repeat process for blue bar
+        String blueProgHex;
+        if (blueProgress / 16 == 15) {
+            blueProgHex = "F";
+            blueProgress = blueProgress - 240;
+        }
+        else if (blueProgress / 16 == 14) {
+            blueProgHex = "E";
+            blueProgress = blueProgress - 224;
+        }
+        else if (blueProgress / 16 == 13) {
+            blueProgHex = "D";
+            blueProgress = blueProgress - 208;
+        }
+        else if (blueProgress / 16 == 12) {
+            blueProgHex = "C";
+            blueProgress = blueProgress - 192;
+        }
+        else if (blueProgress / 16 == 11) {
+            blueProgHex = "B";
+            blueProgress = blueProgress - 176;
+        }
+        else if (blueProgress / 16 == 10) {
+            blueProgHex = "A";
+            blueProgress = blueProgress - 160;
+        }
+        else if (blueProgress / 16 == 9) {
+            blueProgHex = "9";
+            blueProgress = blueProgress - 144;
+        }
+        else if (blueProgress / 16 == 8) {
+            blueProgHex = "8";
+            blueProgress = blueProgress - 128;
+        }
+        else if (blueProgress / 16 == 7) {
+            blueProgHex = "7";
+            blueProgress = blueProgress - 112;
+        }
+        else if (blueProgress / 16 == 6) {
+            blueProgHex = "6";
+            blueProgress = blueProgress - 96;
+        }
+        else if (blueProgress / 16 == 5) {
+            blueProgHex = "5";
+            blueProgress = blueProgress - 80;
+        }
+        else if (blueProgress / 16 == 4) {
+            blueProgHex = "4";
+            blueProgress = blueProgress - 64;
+        }
+        else if (blueProgress / 16 == 3) {
+            blueProgHex = "3";
+            blueProgress = blueProgress - 48;
+        }
+        else if (blueProgress / 16 == 2) {
+            blueProgHex = "2";
+            blueProgress = blueProgress - 32;
+        }
+        else if (blueProgress / 16 == 1) {
+            blueProgHex = "1";
+            blueProgress = blueProgress - 16;
+        }
+        else {
+            blueProgHex = "0";
+        }
+        //Determine second char of blue hex portion
+        if (blueProgress / 16 == 15) {
+            blueProgHex = blueProgHex + "F";
+        }
+        else if (blueProgress / 16 == 14) {
+            blueProgHex = blueProgHex + "E";
+        }
+        else if (blueProgress / 16 == 13) {
+            blueProgHex = blueProgHex + "D";
+        }
+        else if (blueProgress / 16 == 12) {
+            blueProgHex = blueProgHex + "C";
+        }
+        else if (blueProgress / 16 == 11) {
+            blueProgHex = blueProgHex + "B";
+        }
+        else if (blueProgress / 16 == 10) {
+            blueProgHex = blueProgHex + "A";
+        }
+        else if (blueProgress / 16 == 9) {
+            blueProgHex = blueProgHex + "9";
+        }
+        else if (blueProgress / 16 == 8) {
+            blueProgHex = blueProgHex + "8";
+        }
+        else if (blueProgress / 16 == 7) {
+            blueProgHex = blueProgHex + "7";
+        }
+        else if (blueProgress / 16 == 6) {
+            blueProgHex = blueProgHex + "6";
+        }
+        else if (blueProgress / 16 == 5) {
+            blueProgHex = blueProgHex + "5";
+        }
+        else if (blueProgress / 16 == 4) {
+            blueProgHex = blueProgHex + "4";
+        }
+        else if (blueProgress / 16 == 3) {
+            blueProgHex = blueProgHex + "3";
+        }
+        else if (blueProgress / 16 == 2) {
+            blueProgHex = blueProgHex + "2";
+        }
+        else if (blueProgress / 16 == 1) {
+            blueProgHex = blueProgHex + "1";
+        }
+        else {
+            blueProgHex = blueProgHex + "0";
+        }
+        String hexaText = redProgHex + greenProgHex + blueProgHex;
+        et_j_hexValue.setText(hexaText);
     }
 }
