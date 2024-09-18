@@ -490,6 +490,12 @@ public class MainActivity extends AppCompatActivity {
             blueProgHex = blueProgHex + "0";
         }
         String hexaText = redProgHex + greenProgHex + blueProgHex;
+        redProgress = sb_j_redBar.getProgress();
+        greenProgress = sb_j_greenBar.getProgress();
+        blueProgress = sb_j_blueBar.getProgress();
         et_j_hexValue.setText(hexaText);
+        //Changes the background color
+        mainBackground.setBackgroundColor(Color.rgb(redProgress, greenProgress, blueProgress));
+        //Change the color of all the text boxes depending on brightness of any of the RGB values
     }
 }
