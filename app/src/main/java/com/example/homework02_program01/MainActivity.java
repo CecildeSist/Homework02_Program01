@@ -563,6 +563,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addColorInfoToList() {
-        
+        //This creates a new ColorInfo object and fills it out.
+        ColorInfo colorToAdd = new ColorInfo();
+        colorToAdd.setHexaText(et_j_hexValue.getText().toString());
+        colorToAdd.setRedProgress(sb_j_redBar.getProgress());
+        colorToAdd.setGreenProgress(sb_j_greenBar.getProgress());
+        colorToAdd.setBlueProgress(sb_j_blueBar.getProgress());
     }
 }
