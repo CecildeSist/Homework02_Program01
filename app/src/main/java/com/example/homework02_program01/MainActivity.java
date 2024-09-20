@@ -83,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
         blueBarListener();
 
         //Note to self: don't forget about the listView!
+        //Need to save hexcode (primary key), red progress, green progress, and blue progress
+        //(don't need to save background color because the progress bar listeners will change the
+        //color automatically)
     }
 
     private void redBarListener() {
