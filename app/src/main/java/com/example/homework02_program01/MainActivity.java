@@ -88,7 +88,9 @@ public class MainActivity extends AppCompatActivity {
         //color automatically)
     }
 
-    private void redBarListener() {
+    //I made each function public so the background colors in each array item will display
+    //themselves.
+    public void redBarListener() {
         sb_j_redBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -107,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void greenBarListener() {
+    public void greenBarListener() {
         sb_j_greenBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -126,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void blueBarListener() {
+    public void blueBarListener() {
         sb_j_blueBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -145,71 +147,71 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void changeHex() {
+    public void changeHex() {
         //Retrieve progress from each bar.
-        int redProgress = sb_j_redBar.getProgress();
-        int greenProgress = sb_j_greenBar.getProgress();
-        int blueProgress = sb_j_blueBar.getProgress();
+        int redProgress     = sb_j_redBar.getProgress();
+        int greenProgress   = sb_j_greenBar.getProgress();
+        int blueProgress    = sb_j_blueBar.getProgress();
         //Determine first char of red section of hex code
         String redProgHex;
         if (redProgress / 16 == 15) {
-            redProgHex = "F";
+            redProgHex  = "F";
             redProgress = redProgress - 240;
         }
         else if (redProgress / 16 == 14) {
-            redProgHex = "E";
+            redProgHex  = "E";
             redProgress = redProgress - 224;
         }
         else if (redProgress / 16 == 13) {
-            redProgHex = "D";
+            redProgHex  = "D";
             redProgress = redProgress - 208;
         }
         else if (redProgress / 16 == 12) {
-            redProgHex = "C";
+            redProgHex  = "C";
             redProgress = redProgress - 192;
         }
         else if (redProgress / 16 == 11) {
-            redProgHex = "B";
+            redProgHex  = "B";
             redProgress = redProgress - 176;
         }
         else if (redProgress / 16 == 10) {
-            redProgHex = "A";
+            redProgHex  = "A";
             redProgress = redProgress - 160;
         }
         else if (redProgress / 16 == 9) {
-            redProgHex = "9";
+            redProgHex  = "9";
             redProgress = redProgress - 144;
         }
         else if (redProgress / 16 == 8) {
-            redProgHex = "8";
+            redProgHex  = "8";
             redProgress = redProgress - 128;
         }
         else if (redProgress / 16 == 7) {
-            redProgHex = "7";
+            redProgHex  = "7";
             redProgress = redProgress - 112;
         }
         else if (redProgress / 16 == 6) {
-            redProgHex = "6";
+            redProgHex  = "6";
             redProgress = redProgress - 96;
         }
         else if (redProgress / 16 == 5) {
-            redProgHex = "5";
+            redProgHex  = "5";
             redProgress = redProgress - 80;
         }
         else if (redProgress / 16 == 4) {
-            redProgHex = "4";
+            redProgHex  = "4";
             redProgress = redProgress - 64;
         }
         else if (redProgress / 16 == 3) {
-            redProgHex = "3";
+            redProgHex  = "3";
             redProgress = redProgress - 48;
         }
         else if (redProgress / 16 == 2) {
-            redProgHex = "2";
+            redProgHex  = "2";
             redProgress = redProgress - 32;
         }
         else if (redProgress / 16 == 1) {
-            redProgHex = "1";
+            redProgHex  = "1";
             redProgress = redProgress - 16;
         }
         else {
@@ -267,64 +269,64 @@ public class MainActivity extends AppCompatActivity {
         //Repeat process for green bar
         String greenProgHex;
         if (greenProgress / 16 == 15) {
-            greenProgHex = "F";
-            greenProgress = greenProgress - 240;
+            greenProgHex    = "F";
+            greenProgress   = greenProgress - 240;
         }
         else if (greenProgress / 16 == 14) {
-            greenProgHex = "E";
-            greenProgress = greenProgress - 224;
+            greenProgHex    = "E";
+            greenProgress   = greenProgress - 224;
         }
         else if (greenProgress / 16 == 13) {
-            greenProgHex = "D";
-            greenProgress = greenProgress - 208;
+            greenProgHex    = "D";
+            greenProgress   = greenProgress - 208;
         }
         else if (greenProgress / 16 == 12) {
-            greenProgHex = "C";
-            greenProgress = greenProgress - 192;
+            greenProgHex    = "C";
+            greenProgress   = greenProgress - 192;
         }
         else if (greenProgress / 16 == 11) {
-            greenProgHex = "B";
-            greenProgress = greenProgress - 176;
+            greenProgHex    = "B";
+            greenProgress   = greenProgress - 176;
         }
         else if (greenProgress / 16 == 10) {
-            greenProgHex = "A";
-            greenProgress = greenProgress - 160;
+            greenProgHex    = "A";
+            greenProgress   = greenProgress - 160;
         }
         else if (greenProgress / 16 == 9) {
-            greenProgHex = "9";
-            greenProgress = greenProgress - 144;
+            greenProgHex    = "9";
+            greenProgress   = greenProgress - 144;
         }
         else if (greenProgress / 16 == 8) {
-            greenProgHex = "8";
-            greenProgress = greenProgress - 128;
+            greenProgHex    = "8";
+            greenProgress   = greenProgress - 128;
         }
         else if (greenProgress / 16 == 7) {
-            greenProgHex = "7";
-            greenProgress = greenProgress - 112;
+            greenProgHex    = "7";
+            greenProgress   = greenProgress - 112;
         }
         else if (greenProgress / 16 == 6) {
-            greenProgHex = "6";
-            greenProgress = greenProgress - 96;
+            greenProgHex    = "6";
+            greenProgress   = greenProgress - 96;
         }
         else if (greenProgress / 16 == 5) {
-            greenProgHex = "5";
-            greenProgress = greenProgress - 80;
+            greenProgHex    = "5";
+            greenProgress   = greenProgress - 80;
         }
         else if (greenProgress / 16 == 4) {
-            greenProgHex = "4";
-            greenProgress = greenProgress - 64;
+            greenProgHex    = "4";
+            greenProgress   = greenProgress - 64;
         }
         else if (greenProgress / 16 == 3) {
-            greenProgHex = "3";
-            greenProgress = greenProgress - 48;
+            greenProgHex    = "3";
+            greenProgress   = greenProgress - 48;
         }
         else if (greenProgress / 16 == 2) {
-            greenProgHex = "2";
-            greenProgress = greenProgress - 32;
+            greenProgHex    = "2";
+            greenProgress   = greenProgress - 32;
         }
         else if (greenProgress / 16 == 1) {
-            greenProgHex = "1";
-            greenProgress = greenProgress - 16;
+            greenProgHex    = "1";
+            greenProgress   = greenProgress - 16;
         }
         else {
             greenProgHex = "0";
@@ -381,64 +383,64 @@ public class MainActivity extends AppCompatActivity {
         //Repeat process for blue bar
         String blueProgHex;
         if (blueProgress / 16 == 15) {
-            blueProgHex = "F";
-            blueProgress = blueProgress - 240;
+            blueProgHex     = "F";
+            blueProgress    = blueProgress - 240;
         }
         else if (blueProgress / 16 == 14) {
-            blueProgHex = "E";
-            blueProgress = blueProgress - 224;
+            blueProgHex     = "E";
+            blueProgress    = blueProgress - 224;
         }
         else if (blueProgress / 16 == 13) {
-            blueProgHex = "D";
-            blueProgress = blueProgress - 208;
+            blueProgHex     = "D";
+            blueProgress    = blueProgress - 208;
         }
         else if (blueProgress / 16 == 12) {
-            blueProgHex = "C";
-            blueProgress = blueProgress - 192;
+            blueProgHex     = "C";
+            blueProgress    = blueProgress - 192;
         }
         else if (blueProgress / 16 == 11) {
-            blueProgHex = "B";
-            blueProgress = blueProgress - 176;
+            blueProgHex     = "B";
+            blueProgress    = blueProgress - 176;
         }
         else if (blueProgress / 16 == 10) {
-            blueProgHex = "A";
-            blueProgress = blueProgress - 160;
+            blueProgHex     = "A";
+            blueProgress    = blueProgress - 160;
         }
         else if (blueProgress / 16 == 9) {
-            blueProgHex = "9";
-            blueProgress = blueProgress - 144;
+            blueProgHex     = "9";
+            blueProgress    = blueProgress - 144;
         }
         else if (blueProgress / 16 == 8) {
-            blueProgHex = "8";
-            blueProgress = blueProgress - 128;
+            blueProgHex     = "8";
+            blueProgress    = blueProgress - 128;
         }
         else if (blueProgress / 16 == 7) {
-            blueProgHex = "7";
-            blueProgress = blueProgress - 112;
+            blueProgHex     = "7";
+            blueProgress    = blueProgress - 112;
         }
         else if (blueProgress / 16 == 6) {
-            blueProgHex = "6";
-            blueProgress = blueProgress - 96;
+            blueProgHex     = "6";
+            blueProgress    = blueProgress - 96;
         }
         else if (blueProgress / 16 == 5) {
-            blueProgHex = "5";
-            blueProgress = blueProgress - 80;
+            blueProgHex     = "5";
+            blueProgress    = blueProgress - 80;
         }
         else if (blueProgress / 16 == 4) {
-            blueProgHex = "4";
-            blueProgress = blueProgress - 64;
+            blueProgHex     = "4";
+            blueProgress    = blueProgress - 64;
         }
         else if (blueProgress / 16 == 3) {
-            blueProgHex = "3";
-            blueProgress = blueProgress - 48;
+            blueProgHex     = "3";
+            blueProgress    = blueProgress - 48;
         }
         else if (blueProgress / 16 == 2) {
-            blueProgHex = "2";
-            blueProgress = blueProgress - 32;
+            blueProgHex     = "2";
+            blueProgress    = blueProgress - 32;
         }
         else if (blueProgress / 16 == 1) {
-            blueProgHex = "1";
-            blueProgress = blueProgress - 16;
+            blueProgHex     = "1";
+            blueProgress    = blueProgress - 16;
         }
         else {
             blueProgHex = "0";
