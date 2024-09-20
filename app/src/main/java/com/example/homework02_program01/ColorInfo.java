@@ -18,5 +18,37 @@ public class ColorInfo {
         blueProgress    = 127;
     }
 
-    //Getters
+    //Getters and setters
+
+    public String getHexaText() {
+        return hexaText;
+    }
+
+    public void setHexaText(String hexaText) {
+        this.hexaText = hexaText;
+    }
+
+    public int getRedProgress() {
+        return redProgress;
+    }
+
+    public void setRedProgress(int redProgress) {
+        this.redProgress = redProgress;
+    }
+
+    public int getGreenProgress() {
+        return greenProgress;
+    }
+
+    public void setGreenProgress(int greenProgress) {
+        this.greenProgress = greenProgress;
+    }
+
+    public int getBlueProgress() {
+        return blueProgress;
+    }
+
+    public void setBlueProgress(int blueProgress) {
+        this.blueProgress = blueProgress;
+    }
 }
