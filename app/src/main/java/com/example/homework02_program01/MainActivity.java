@@ -27,6 +27,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     //Declare the changeable text boxes, the setbars, the button, and the list view. GUI elements are declared here from top to bottom.
     TextView et_j_redWord;
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn_j_saveColor;
 
     ListView lv_j_colorList;
+    ArrayList<ColorInfo> listOfColors;
 
     ConstraintLayout mainBackground;
 
