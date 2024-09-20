@@ -12,9 +12,11 @@ public class ColorInfo {
 
     //Overloaded constructor
     public ColorInfo(String hT, int rP, int gP, int bP) {
-        hexaText        = "CD3E3E";
+        hexaText        = "CD3E7F";
         redProgress     = 205;
         greenProgress   = 62;
-        blueProgress    = 62;
+        blueProgress    = 127;
     }
+
+    //Getters
 }
