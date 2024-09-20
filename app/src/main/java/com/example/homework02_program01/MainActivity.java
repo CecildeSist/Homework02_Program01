@@ -10,6 +10,7 @@ package com.example.homework02_program01;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -86,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         //Need to save hexcode (primary key), red progress, green progress, and blue progress
         //(don't need to save background color because the progress bar listeners will change the
         //color automatically)
+        registerButtonClickEvent();
     }
 
     //I made each function public so the background colors in each array item will display
@@ -544,5 +546,16 @@ public class MainActivity extends AppCompatActivity {
             et_j_hexWord.setTextColor(Color.rgb(0, 0, 0));
             et_j_hexValue.setTextColor(Color.rgb(0, 0, 0));
         }
+    }
+
+    //button listener
+    private void registerButtonClickEvent() {
+        btn_j_saveColor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Saves a color to the array
+
+            }
+        });
     }
 }
