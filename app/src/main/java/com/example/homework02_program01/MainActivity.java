@@ -557,7 +557,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Saves a color to the array
-
+                addColorInfoToList();
             }
         });
     }
