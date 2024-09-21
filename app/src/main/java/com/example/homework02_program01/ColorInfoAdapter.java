@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import java.util.ArrayList;
 
 public class ColorInfoAdapter extends BaseAdapter {
+    MainActivity m = new MainActivity();
     Context context;
     ArrayList<ColorInfo> listOfColors;
     public ColorInfoAdapter(Context c, ArrayList<ColorInfo> ls)
