@@ -1,6 +1,7 @@
 package com.example.homework02_program01;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -18,21 +19,24 @@ public class ColorInfoAdapter extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return 0;
+        return listOfColors.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return null;
+        return listOfColors.get(i);
     }
 
     @Override
     public long getItemId(int i) {
-        return 0;
+        return i;
     }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
+        if (view == null) {
+            LayoutInflater mInflater = (LayoutInflater) context.getSystemService(MainActivity.LAYOUT_INFLATER_SERVICE);
+        }
         return null;
     }
 }
