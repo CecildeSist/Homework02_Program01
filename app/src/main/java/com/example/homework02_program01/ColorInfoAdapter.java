@@ -41,7 +41,15 @@ public class ColorInfoAdapter extends BaseAdapter {
         }
         //Establishing the GUI elements from the custom cell
         TextView cCredWord, cCredNum, cCgreenWord, cCgreenNum, cCblueWord, cCblueNum;
-        TextView cChexWord, cChexNum;
+        TextView cChexWord, cChexVal;
+        cCredWord = view.findViewById(R.id.tv_custom_redWord);
+        cCredNum = view.findViewById(R.id.tv_customCell_redNum);
+        cCgreenWord = view.findViewById(R.id.tv_customCell_greenWord);
+        cCgreenNum = view.findViewById(R.id.tv_customCell_greenNum);
+        cCblueWord = view.findViewById(R.id.tv_customCell_blueWord);
+        cCblueNum = view.findViewById(R.id.tv_customCell_blueNum);
+        cChexWord = view.findViewById(R.id.tv_customCell_hexWord);
+        cChexVal = view.findViewById(R.id.tv_customCell_hexValue);
         return null;
     }
 }
