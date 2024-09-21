@@ -36,6 +36,7 @@ public class ColorInfoAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         if (view == null) {
             LayoutInflater mInflater = (LayoutInflater) context.getSystemService(MainActivity.LAYOUT_INFLATER_SERVICE);
+            view = mInflater.inflate(R.layout.custom_cell, null);
         }
         return null;
     }
