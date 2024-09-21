@@ -1,10 +1,16 @@
 package com.example.homework02_program01;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
+import java.util.ArrayList;
+
 public class ColorInfoAdapter extends BaseAdapter {
+    public ColorInfoAdapter(Context c, ArrayList<ColorInfo> ls) {
+        
+    }
     @Override
     public int getCount() {
         return 0;
