@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tv_custom_redWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red:"
+        android:textColor="#040404"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_customCell_redNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="255"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <TextView
+        android:id="@+id/tv_customCell_greenWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green:"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <TextView
+        android:id="@+id/tv_customCell_greenNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="255"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <TextView
+        android:id="@+id/tv_customCell_blueWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue:"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <TextView
+        android:id="@+id/tv_customCell_blueNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="255"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="17dp" />
+
+    <TextView
+        android:id="@+id/tv_customCell_hexWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hex:"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/tv_customCell_hexValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FFFFFF"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="45dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
