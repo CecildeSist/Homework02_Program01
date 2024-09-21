@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     ListView lv_j_colorList;
     ArrayList<ColorInfo> listOfColors;
 
+    ColorInfoAdapter adapter;
+
     ConstraintLayout mainBackground;
 
     @Override
@@ -88,6 +90,9 @@ public class MainActivity extends AppCompatActivity {
         blueBarListener();
 
         listOfColors = new ArrayList<ColorInfo>();
+        //Should I call this before or after the click listener? Test the code later to make sure
+        //this doesn't cause a logic error.
+        fillListView();
         //Need to save hexcode (primary key), red progress, green progress, and blue progress
         //(don't need to save background color because the progress bar listeners will change the
         //color automatically)
@@ -575,5 +580,9 @@ public class MainActivity extends AppCompatActivity {
         colorToAdd.setGreenProgress(sb_j_greenBar.getProgress());
         colorToAdd.setBlueProgress(sb_j_blueBar.getProgress());
         listOfColors.add(colorToAdd);
+    }
+
+    private void fillListView(){
+
     }
 }
