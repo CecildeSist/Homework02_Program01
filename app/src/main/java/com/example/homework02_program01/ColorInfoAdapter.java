@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -38,6 +39,9 @@ public class ColorInfoAdapter extends BaseAdapter {
             LayoutInflater mInflater = (LayoutInflater) context.getSystemService(MainActivity.LAYOUT_INFLATER_SERVICE);
             view = mInflater.inflate(R.layout.custom_cell, null);
         }
+        //Establishing the GUI elements from the custom cell
+        TextView cCredWord, cCredNum, cCgreenWord, cCgreenNum, cCblueWord, cCblueNum;
+        TextView cChexWord, cChexNum;
         return null;
     }
 }
