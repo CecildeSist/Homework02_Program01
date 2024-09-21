@@ -583,6 +583,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fillListView(){
-
+        adapter = new ColorInfoAdapter(this, listOfColors);
     }
 }
