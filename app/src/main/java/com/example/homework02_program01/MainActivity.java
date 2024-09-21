@@ -559,7 +559,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Saves a color to the array
                 addColorInfoToList();
-                listAllColorInfoData();
+                //Resets the seekbars' progress to 255 each
+                sb_j_redBar.setProgress(255);
+                sb_j_greenBar.setProgress(255);
+                sb_j_blueBar.setProgress(255);
             }
         });
     }
@@ -572,16 +575,5 @@ public class MainActivity extends AppCompatActivity {
         colorToAdd.setGreenProgress(sb_j_greenBar.getProgress());
         colorToAdd.setBlueProgress(sb_j_blueBar.getProgress());
         listOfColors.add(colorToAdd);
-    }
-
-    private void listAllColorInfoData() {
-        for (int i = 0; i < listOfColors.size(); i++) {
-            //This is just for testing
-            Log.d("hexaText: ", listOfColors.get(i).getHexaText());
-            //Resets the seekbars' progress to 255 each
-            sb_j_redBar.setProgress(255);
-            sb_j_greenBar.setProgress(255);
-            sb_j_blueBar.setProgress(255);
-        }
     }
 }
