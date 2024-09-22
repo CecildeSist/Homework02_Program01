@@ -564,6 +564,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Saves a color to the array
                 addColorInfoToList();
+                //Displays saved colors in listView
+                adapter.notifyDataSetChanged();
                 //Resets the seekbars' progress to 255 each
                 sb_j_redBar.setProgress(255);
                 sb_j_greenBar.setProgress(255);
