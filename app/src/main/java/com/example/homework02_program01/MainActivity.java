@@ -584,7 +584,7 @@ public class MainActivity extends AppCompatActivity {
         listOfColors.add(colorToAdd);
     }
 
-    private void fillListView(){
+    private void fillListView() {
         adapter = new ColorInfoAdapter(this, listOfColors);
         //Setting the listView adapter
         lv_j_colorList.setAdapter(adapter);
