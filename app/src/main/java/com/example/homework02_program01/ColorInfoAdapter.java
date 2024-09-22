@@ -50,6 +50,13 @@ public class ColorInfoAdapter extends BaseAdapter {
         cCblueNum = view.findViewById(R.id.tv_customCell_blueNum);
         cChexWord = view.findViewById(R.id.tv_customCell_hexWord);
         cChexVal = view.findViewById(R.id.tv_customCell_hexValue);
+        ColorInfo col = listOfColors.get(i);
+
+        //Set the GUI
+        cCredNum.setText(col.getRedProgress());
+        cCgreenNum.setText(col.getGreenProgress());
+        cCblueNum.setText(col.getBlueProgress());
+        cChexVal.setText(col.getHexaText());
         return null;
     }
 }
