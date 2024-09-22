@@ -57,6 +57,6 @@ public class ColorInfoAdapter extends BaseAdapter {
         cCgreenNum.setText(col.getGreenProgress());
         cCblueNum.setText(col.getBlueProgress());
         cChexVal.setText(col.getHexaText());
-        return null;
+        return view;
     }
 }
