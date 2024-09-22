@@ -14,8 +14,8 @@ public class ColorInfoAdapter extends BaseAdapter {
     ArrayList<ColorInfo> listOfColors;
     public ColorInfoAdapter(Context c, ArrayList<ColorInfo> ls)
     {
-        context = c;
-        listOfColors = ls;
+        context         = c;
+        listOfColors    = ls;
     }
     @Override
     public int getCount() {
@@ -35,21 +35,21 @@ public class ColorInfoAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         if (view == null) {
-            LayoutInflater mInflater = (LayoutInflater) context.getSystemService(MainActivity.LAYOUT_INFLATER_SERVICE);
-            view = mInflater.inflate(R.layout.custom_cell, null);
+            LayoutInflater mInflater    = (LayoutInflater) context.getSystemService(MainActivity.LAYOUT_INFLATER_SERVICE);
+            view                        = mInflater.inflate(R.layout.custom_cell, null);
         }
         //Establishing the GUI elements from the custom cell
         TextView cCredWord, cCredNum, cCgreenWord, cCgreenNum, cCblueWord, cCblueNum;
         TextView cChexWord, cChexVal;
-        cCredWord = view.findViewById(R.id.tv_custom_redWord);
-        cCredNum = view.findViewById(R.id.tv_customCell_redNum);
-        cCgreenWord = view.findViewById(R.id.tv_customCell_greenWord);
-        cCgreenNum = view.findViewById(R.id.tv_customCell_greenNum);
-        cCblueWord = view.findViewById(R.id.tv_customCell_blueWord);
-        cCblueNum = view.findViewById(R.id.tv_customCell_blueNum);
-        cChexWord = view.findViewById(R.id.tv_customCell_hexWord);
-        cChexVal = view.findViewById(R.id.tv_customCell_hexValue);
-        ColorInfo col = listOfColors.get(i);
+        cCredWord       = view.findViewById(R.id.tv_custom_redWord);
+        cCredNum        = view.findViewById(R.id.tv_customCell_redNum);
+        cCgreenWord     = view.findViewById(R.id.tv_customCell_greenWord);
+        cCgreenNum      = view.findViewById(R.id.tv_customCell_greenNum);
+        cCblueWord      = view.findViewById(R.id.tv_customCell_blueWord);
+        cCblueNum       = view.findViewById(R.id.tv_customCell_blueNum);
+        cChexWord       = view.findViewById(R.id.tv_customCell_hexWord);
+        cChexVal        = view.findViewById(R.id.tv_customCell_hexValue);
+        ColorInfo col   = listOfColors.get(i);
 
         //Set the GUI
         cCredNum.setText(col.getRedProgress());
